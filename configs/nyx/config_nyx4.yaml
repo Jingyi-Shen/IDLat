@@ -1,0 +1,62 @@
+# logger options
+snapshot_save_itr: 20
+log_itr: 20
+test_itr: 50
+
+# optimization options
+max_itr: 100
+lr: 0.0001
+lr_aux: 0.001
+lr_shedule_step: 400
+lr_shedule_scale: 0.1
+clip_max_norm: 1
+# fine-tuning options
+set_lr: 0
+
+
+cuda: True
+# model hyperparamters
+inmap: 1
+ind: 1
+N: 16
+M: 16
+sft_ks: 3
+prior_nc: 16
+
+# data options
+dataname: nyx
+# dataname: vortex
+# train_data_file_path: /fs/project/PAS0027/vortex_data/vortex/vorts10.data
+# train_data_file_path: /fs/project/PAS0027/Isabel_data_pressure/Pf01.bin.gz
+train_data_file_path: 
+test_data_file_path: /fs/project/PAS0027/nyx/256/256CombineFiles/raw/4.bin
+# test_data_file_path: /fs/project/PAS0027/vortex_data/vortex/vorts10.data
+data_file_path_txt: /users/PAS0027/shen1250/Project/SciVis_Autoencoder/data/nyx_trainingdata_txt/nyx_ts05_5000.txt
+# data_file_path_txt: /users/PAS0027/shen1250/Project/SciVis_Autoencoder/data/nyx_trainingdata_txt/nyx_ts05_500_s32.txt
+
+# comment out data_map_file_path while training
+# data_map_file_path: 
+data_map_file_path: ./data/nyx_high_density_map/map_nyx_004_thresh10_5.bin
+# data_map_file_path: ./data/importance/map_vor_010_revfeatureTF.bin
+beta: 100
+#100
+
+laty_path: ./results/vortex/AEout/100mse_N8M8ks3nc4/latents_GP/3DGridSparse_RBF_space05ori_y_u512_iters0_ts5_mean.npy
+latz_path: ./results/vortex/AEout/100mse_N8M8ks3nc4/latents_GP/3DGridSparse_RBF_space05ori_z_u512_iters0_ts5_mean.npy
+# laty_path: ./results/vortex/AEout/latent_max2/latents_linear/latent_y_ts1.npy
+# latz_path: ./results/vortex/AEout/latent_max2/latents_linear/latent_z_ts1.npy
+ts: 5
+
+batchsize: 256
+batchsize_test: 256
+blocksize: 24
+worker_num: 1
+p: 0.2
+padding: 4
+
+a: 1.
+b: 5.5
+
+train_y_z: y
+
+# tensorboard --logdir=./results/isabel/logs/ --host localhost --port 8888

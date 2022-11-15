@@ -1,0 +1,48 @@
+# logger options
+snapshot_save_itr: 10
+log_itr: 10
+test_itr: 10
+
+# optimization options
+max_itr: 50
+lr: 0.0001
+lr_aux: 0.001
+lr_shedule_step: 600
+lr_shedule_scale: 0.1
+clip_max_norm: 1
+# fine-tuning options
+set_lr: 0
+
+
+cuda: True
+# model hyperparamters
+inmap: 1
+ind: 1
+N: 16
+M: 16
+sft_ks: 3
+prior_nc: 16
+
+# data options
+dataname: isabel
+train_data_file_path: 
+test_data_file_path: /fs/project/PAS0027/Isabel_data_pressure/Pf01.bin.gz
+
+data_file_path_txt: /users/PAS0027/shen1250/Project/SciVis_Autoencoder/data/isabel_trainingdata_P_txt/P_ts05_5500.txt
+
+data_map_file_path: 
+beta: 10
+a: 1
+
+ts: 5
+
+batchsize: 256
+batchsize_test: 256
+blocksize: 24
+worker_num: 1
+p: 0.2
+padding: 4
+
+
+train_y_z: y
+

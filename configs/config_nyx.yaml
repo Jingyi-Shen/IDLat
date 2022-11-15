@@ -1,0 +1,48 @@
+# logger options
+snapshot_save_itr: 50
+log_itr: 50
+test_itr: 50
+
+# optimization options
+max_itr: 600
+lr: 0.0001
+lr_aux: 0.001
+lr_shedule_step: 400
+lr_shedule_scale: 0.1
+clip_max_norm: 1
+# fine-tuning options
+set_lr: 0
+
+
+cuda: True
+# model hyperparamters
+inmap: 1
+ind: 1
+N: 16
+M: 16
+sft_ks: 3
+prior_nc: 16
+
+# data options
+dataname: nyx
+train_data_file_path: 
+test_data_file_path: /fs/project/PAS0027/nyx/256/256CombineFiles/raw/4.bin
+data_file_path_txt: /users/PAS0027/shen1250/Project/SciVis_Autoencoder/data/nyx_trainingdata_txt/nyx_ts05_5000.txt
+data_map_file_path: 
+beta: 5
+a: 3
+
+ts: 5
+
+batchsize: 256
+batchsize_test: 256
+blocksize: 24
+worker_num: 1
+p: 0.2
+padding: 4
+
+
+train_y_z: y
+
+# tensorboard --logdir=./results/tornado_itr_1000_2mse_exp1x/logs/ --host localhost --port 8888
+

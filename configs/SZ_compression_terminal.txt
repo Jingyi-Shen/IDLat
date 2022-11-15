@@ -1,0 +1,4 @@
+./SZ/bin/sz -z -f -M PSNR -S 52 -i /Users/jingyishen/Projects/QmapCompression/data/Pf05_512_512_96_ori.bin -3 512 512 96
+
+Decompress:
+./SZ/bin/sz -x -f -s /Users/jingyishen/Projects/QmapCompression/data/vorts10.data.sz -3 128 128 128 -a -i /Users/jingyishen/Projects/QmapCompression/data/vorts10.data 

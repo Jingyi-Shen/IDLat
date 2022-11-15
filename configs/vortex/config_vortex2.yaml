@@ -1,0 +1,49 @@
+# logger options
+snapshot_save_itr: 50
+log_itr: 50
+test_itr: 100
+
+# optimization options
+max_itr: 500
+lr: 0.0001
+lr_aux: 0.001
+lr_shedule_step: 400
+lr_shedule_scale: 0.1
+clip_max_norm: 1
+# fine-tuning options
+set_lr: 0
+
+
+cuda: True
+# model hyperparamters
+inmap: 1
+ind: 1
+N: 16
+M: 16
+sft_ks: 3
+prior_nc: 16
+
+# data options
+# dataname: isabel
+dataname: vortex
+train_data_file_path: 
+test_data_file_path: /fs/project/PAS0027/vortex_data/vortex/vorts01.data
+data_file_path_txt: /users/PAS0027/shen1250/Project/SciVis_Autoencoder/data/Vortex_trainingdata_txt/vortex_ts05_1000.txt
+
+data_map_file_path: ./data/iso_bin/vorts01_dense_bin/vorts01_iso7.bin
+beta: 10
+
+ts: 5
+
+batchsize: 256
+batchsize_test: 256
+blocksize: 24
+worker_num: 1
+p: 0.2
+padding: 8
+
+a: 1
+b: 5.5
+
+train_y_z: y
+

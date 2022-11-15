@@ -1,0 +1,47 @@
+# logger options
+snapshot_save_itr: 500
+log_itr: 500
+test_itr: 500
+
+# optimization options
+max_itr: 2000
+lr: 0.001
+lr_aux: 0.001
+lr_shedule_step: 1500
+lr_shedule_scale: 0.1
+clip_max_norm: 1
+# fine-tuning options
+set_lr: 0
+
+
+cuda: True
+# model hyperparamters
+N: 8
+M: 8
+sft_ks: 3
+prior_nc: 8
+
+
+# data options
+# dataname: isabel
+# data_file_path: ./data/Pf05.bin.gz
+# data_map_file_path: ./data/Pf05.bin.gz
+dataname: vortex
+data_file_path: /fs/project/PAS0027/vortex_data/vortex/vorts10.data
+data_map_file_path: ./data/iso_mesh_iso6/vorts10_iso6.bin
+beta: 100
+
+
+laty_path: ./results/vortex/AEout/latent_max2/latents_GP/4D_latent_all_y_RBFu400_iters1000_ts1_mean.npy
+latz_path: ./results/vortex/AEout/latent_max2/latents_GP/4D_latent_all_z_RBFu400_iters1262_ts1_mean.npy
+# laty_path: ./results/vortex/AEout/latent_max2/latents_linear/latent_y_ts1.npy
+# latz_path: ./results/vortex/AEout/latent_max2/latents_linear/latent_z_ts1.npy
+ts: 1
+
+batchsize: 128
+batchsize_test: 128
+blocksize: 24
+worker_num: 1
+p: 0.2
+
+# tensorboard --logdir=./results/isabel/logs/ --host localhost --port 8888
