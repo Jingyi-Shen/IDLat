@@ -18,22 +18,22 @@ To evalute IDLat on Vortex dataset and generate latent representations with unif
 ```
 
 python eval.py --config=./configs/config_vortex.yaml \
-               --snapshot ./results/vortex_600_beta5_a7/snapshots/best.pt 
-               --tqdm 
-               --output_dir ./results/vortex_600_beta5_a7/outputs/  
-               --map_value 0.9  
-               --map_name 'uni09'
+               --snapshot ./results/vortex_600_beta5_a7/snapshots/best.pt \
+               --tqdm \
+               --output_dir ./results/vortex_600_beta5_a7/outputs/ \
+               --map_value 0.9 \
+               --map_name 'uni09' 
 
 ```
 
 To evalute IDLat on Vortex dataset and generate latent representations with isosurface distance map (e.g., isovalue = 7), run 
 
 ```
-python eval.py --config=./configs/vortex/config_vortex2.yaml 
-               --snapshot ./results/vortex_600_beta5_a7/snapshots/best.pt 
-               --tqdm 
-               --output_dir ./results/vortex_600_beta5_a7/outputs/  
-               --map_name 'iso7'
+python eval.py --config=./configs/vortex/config_vortex2.yaml \
+               --snapshot ./results/vortex_600_beta5_a7/snapshots/best.pt \
+               --tqdm \
+               --output_dir ./results/vortex_600_beta5_a7/outputs/ \
+               --map_name 'iso7' 
 
 ```
 
