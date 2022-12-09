@@ -2,6 +2,11 @@
 
 Code for "IDLat: An Importance-Driven Latent Generation Method for Scientific Data", IEEE Transactions on Visualization and Computer Graphics (IEEE VIS 2022). 
 
+<!--
+![Python 3.7](https://img.shields.io/badge/Python-3.7-green.svg?style=plastic)
+![pytorch 1.1.0](https://img.shields.io/badge/Pytorch-1.1.0-green.svg?style=plastic)
+![pyqt5 5.13.0](https://img.shields.io/badge/pyqt5-5.13.0-green.svg?style=plastic)
+-->
 
 To train IDLat on Vortex dataset, run 
 
